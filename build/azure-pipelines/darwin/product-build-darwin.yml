@@ -9,7 +9,7 @@ steps:
       set -e
       which c++
       c++ --version
-      git clone https://github.com/microsoft/node-spdlog
+      git clone -b robo/test_napi https://github.com/microsoft/node-spdlog
       cd node-spdlog
       git submodule update --init
       npm install
