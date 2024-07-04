@@ -7,9 +7,10 @@ steps:
 
   - script: |
       set -e
+      sudo xcode-select --switch /Applications/Xcode_15.4.app
       which c++
       c++ --version
-      git clone -b robo/test_napi https://github.com/microsoft/node-spdlog
+      git clone https://github.com/microsoft/node-spdlog
       cd node-spdlog
       git submodule update --init
       npm install
