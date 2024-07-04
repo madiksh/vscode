@@ -207,7 +207,6 @@ stages:
       - job: Compile
         timeoutInMinutes: 90
         pool:
-          vmImage: macOS-11
-          os: macOS
+          vmImage: macOS-latest
         steps:
           - template: darwin/product-build-darwin.yml@self
