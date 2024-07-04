@@ -21,7 +21,7 @@ steps:
       npm_config_loglevel: 'verbose'
     displayName: Build spdlog
 
-  - task: 1ES.PublishPipelineArtifact@1
+  - task: PublishPipelineArtifact@1
     inputs:
       targetPath: $(Build.SourcesDirectory)/node-spdlog/build/Release/spdlog.node
       artifactName: spdlog-built
